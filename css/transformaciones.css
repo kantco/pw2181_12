@@ -25,7 +25,7 @@ article:hover{
 	width: 800px;
 }
 */
-article:hover
+/*article:hover
 {
 	background: black;
 	color: greenyellow;
@@ -34,4 +34,46 @@ article:hover
 	-moz-transform: translate(150px,300px);
 	-ms-transform: translate(150px,300px);
 	transform: translate(150px,300px);
+}*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: scale(50);
+	-webkit-transform: scale(50);
+	-moz-transform: scale(50);
+	-ms-transform: scale(50);
+	transform: scale(50);
+}*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: skew(-10deg,10deg);
+	-webkit-transform: skew(-10deg,10deg);
+	-moz-transform: skew(-10deg,10deg);
+	-ms-transform: skew(-10deg,10deg);
+	transform: skew(-10deg,10deg);
+}*/
+article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform:translate(150px,150px) rotate(360deg) scale(2,3) skew(-10deg,10deg);
+	-webkit-transform:translate(150px,150px) rotate(360deg) scale(2,3) skew(-10deg,10deg);
+	-moz-transform:translate(150px,150px) rotate(360deg) scale(2,3) skew(-10deg,10deg);
+	-ms-transform:translate(150px,150px) rotate(360deg) scale(2,3) skew(-10deg,10deg);
+	transform:translate(150px,150px) rotate(360deg) scale(2,3) skew(-10deg,10deg);
 }
+
+
