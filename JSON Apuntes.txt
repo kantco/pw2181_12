@@ -1,0 +1,11 @@
+JSON
+JvaScript Object Notation
+
+arreglo:[
+	muchasLlaves:{
+	llave:valor,
+	llave2:valor
+	},
+	llave3:valor,
+	llave2:valor
+]
