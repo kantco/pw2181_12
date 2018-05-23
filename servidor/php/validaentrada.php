@@ -7,8 +7,9 @@ function valida(){
 	//Conectarnos al servidor de BD.
 	$con=conecta();
 	$consulta="select usuario, clave from usuarios where usuario='".$usuario."' and clave='".$clave."' limit 1";
-	$resConsulta=mysql_query($con,$consulta);
-	if(mysli_num_rows($resConsulta) > 0){
+	//echo $consulta;
+	$resConsulta=mysqli_query($con,$consulta);
+	if(mysqli_num_rows($resConsulta) > 0){
 		$respuesta = true;
 	}
 	$salidaJSON = array('respuesta' => $respuesta );
@@ -21,7 +22,7 @@ function valida(){
 			break;
 		
 		default:
-			# code...
+			
 			break;
 	}
 ?>

@@ -1,7 +1,7 @@
 var inicioApp = function(){
 	var Aceptar = function(){
-		var usuario=$("txtUsuario").val();
-		var clave =$("#txtxClave").val();
+		var usuario=$("#txtUsuario").val();
+		var clave =$("#txtClave").val();
 		var parametros="opc=validaentrada"+
 						"&usuario="+usuario+
 						"&clave="+clave+
@@ -10,7 +10,7 @@ var inicioApp = function(){
 			cache:false,
 			type: "POST",
 			dataType: "json",
-			url: "php/validaentrada.php"
+			url: "php/validaentrada.php",
 			data: parametros,
 			success: function(response) {
 				if(response.respuesta == true){
@@ -24,6 +24,6 @@ var inicioApp = function(){
 			}
 		});
 	}
-	$("btnAceptar").on("click",Aceptar);
+	$("#btnAceptar").on("click",Aceptar);
 }
 $(document).ready(inicioApp);
