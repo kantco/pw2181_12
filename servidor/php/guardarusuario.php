@@ -20,7 +20,7 @@ function guardarusuario(){
 		$consultaGuarda=sprintf("insert into usuarios values(default,%s,%s,%s)",$usuario,$nombre,$clave);
 	}
 	mysqli_query($con,$consultaGuarda); //Ejecuta la consulta
-	if (mysqli_affected_rows() > 0){
+	if (mysqli_affected_rows($con) > 0){ //Cantidad de registros afectados
 		$respuesta = true;
 	}
 	$salidaJSON = array('respuesta' => $respuesta);
