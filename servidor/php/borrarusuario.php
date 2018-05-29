@@ -16,7 +16,7 @@ function borrarusuario(){
 	$opc=$_POST["opc"];
 	switch ($opc) {
 		case 'borrarusuario':
-			guardarusuario();
+			borrarusuario();
 			break;
 		
 		default:
