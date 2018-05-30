@@ -6,7 +6,7 @@ function borrarusuario(){
 	//Conectarnos al servidor de BD.
 	$con=conecta();
 	$consulta=sprintf("delete from usuarios where usuario = %s",$usuario);
-	mysqli_query($con,$consultaBorra); //Ejecuta la consulta
+	$resConsulta = mysqli_query($con,$consultaBorra); //Ejecuta la consulta
 	if (mysqli_affected_rows($con) > 0){ //Cantidad de registros afectados
 		$respuesta = true;
 	}

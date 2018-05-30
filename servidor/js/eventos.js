@@ -96,7 +96,7 @@ var inicioApp = function(){
 		var usuario = $("#txtNombreUsuario").val();
 		var nombre  = $("#txtNombre").val();
 		var pregunta  = prompt("Seguro de borrar a "+nombre+"? (si/no)", "no");
-		var parametros="opc=borrarususaio"+
+		var parametros="opc=borrarusuario"+
 						"&usuario"+usuario+
 						"&aleatorio"+Math.random();
 
